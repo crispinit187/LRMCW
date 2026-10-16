@@ -19,6 +19,16 @@ export const facts = [
   { label: 'Venue', value: 'Olympia Park Congregation', sub: 'Lusaka' },
 ];
 
+export const concert = {
+  name: '800 Male Choir Christmas Concert',
+  date: 'Thursday, 24 December 2026',
+  detail: '15:00hrs · Olympia Park Congregation, Lusaka',
+  // Countdown target. Lusaka time (UTC+02:00).
+  startsAt: '2026-12-24T15:00:00+02:00',
+  // Type the name here when it is known. Empty shows a blank line.
+  guestOfHonour: '',
+};
+
 // Newest first. `date` is ISO (YYYY-MM-DD), `label` is what readers see.
 export const updates = [
   {

@@ -1,10 +1,12 @@
 import WaterBackground from './components/WaterBackground.jsx';
 import ChristmasTree from './components/ChristmasTree.jsx';
+import Countdown from './components/Countdown.jsx';
 import logo from './assets/nac-logo.png';
 import {
   organiser,
   hero,
   facts,
+  concert,
   updates,
   notes,
   pieces,
@@ -68,6 +70,27 @@ export default function App() {
             </div>
           ))}
         </div>
+
+        <section id="concert">
+          <h2>Christmas Concert</h2>
+          <div className="panel concert">
+            <div>
+              <div className="label">{concert.name}</div>
+              <div className="value">{concert.date}</div>
+              <div className="sub">{concert.detail}</div>
+            </div>
+            <Countdown startsAt={concert.startsAt} />
+            <div className="guest">
+              <span className="label">Guest of Honour</span>
+              <span
+                className="guest-line"
+                {...(concert.guestOfHonour ? {} : { role: 'img', 'aria-label': 'To be announced' })}
+              >
+                {concert.guestOfHonour}
+              </span>
+            </div>
+          </div>
+        </section>
 
         <section id="updates">
           <h2>Updates</h2>
