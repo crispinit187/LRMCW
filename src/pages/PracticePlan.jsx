@@ -93,7 +93,7 @@ export default function PracticePlan() {
   return (
     <div className="wrap">
       <div className="toolbar">
-        <a className="back" href="#/">
+        <a className="btn" href="#/">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M11 5l-7 7 7 7 1.4-1.4L7.8 13H20v-2H7.8l4.6-4.6L11 5z" />
           </svg>
