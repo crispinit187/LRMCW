@@ -93,12 +93,6 @@ export default function PracticePlan() {
   return (
     <div className="wrap">
       <div className="toolbar">
-        <PdfButton
-          href={downloads.plan}
-          name="Choir-Practice-Plan-17-October-2026.pdf"
-          label="Download Practice Plan"
-          title="Download the practice plan document"
-        />
         <a className="back" href="#/">
           <svg viewBox="0 0 24 24" aria-hidden="true">
             <path d="M11 5l-7 7 7 7 1.4-1.4L7.8 13H20v-2H7.8l4.6-4.6L11 5z" />
@@ -118,6 +112,14 @@ export default function PracticePlan() {
           {practicePlan.hours}
         </p>
         <p className="theme-line">{practicePlan.theme}</p>
+        <div className="plan-dl">
+          <PdfButton
+            href={downloads.plan}
+            name="Choir-Practice-Plan-17-October-2026.pdf"
+            label="Download Practice Plan"
+            title="Download the practice plan document"
+          />
+        </div>
       </header>
 
       <div className="plan-controls">

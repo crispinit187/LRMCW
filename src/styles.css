@@ -190,3 +190,5 @@ footer strong { color: var(--ink); font-weight: 600; }
   .btn { width: 100%; justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) { .chev, .btn, .pdf-btn, .plan-activity { transition: none; } }
+.plan-dl { margin-top: 18px; }
+.toolbar { justify-content: flex-start; }
