@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://crispinit187.github.io/LRMCW/sitemap.xml

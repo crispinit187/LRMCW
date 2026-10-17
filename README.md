@@ -26,6 +26,10 @@ All page content is in `src/data/content.js`. To post an update, add an entry at
 
 Newest first. The first entry is marked "Latest". Commit and push to `main` and the site redeploys.
 
+## Practice plan page
+
+The plan page is at `/#/practice-plan`. Its schedule, team leaders and members are in the `practicePlan` list in `src/data/content.js`. The PDFs people can download are in `public/downloads/`. To replace one, save the new file there with the same name.
+
 ## Deploy to GitHub Pages
 
 1. Create a GitHub repository and push this project to the `main` branch.
@@ -34,7 +38,6 @@ Newest first. The first entry is marked "Latest". Commit and push to `main` and 
 
 Asset paths are relative (`base: './'` in `vite.config.js`), so no repository name needs to be configured.
 
-## Still to add when the address is known
+## Site address
 
-- `sitemap.xml` and the sitemap line in `public/robots.txt`
-- `og:url` and an `og:image` (both need the final absolute site address) in `index.html`
+The live site is at https://crispinit187.github.io/LRMCW/. If you move to a custom domain, update the address in `index.html` (canonical, `og:url`, `og:image`, `twitter:image`), `public/robots.txt` and `public/sitemap.xml`.
